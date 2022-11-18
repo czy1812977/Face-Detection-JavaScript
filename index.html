@@ -5,25 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
+  <script defer src="js/face-api.js"></script>
+  <script defer src="js/math.min.js"></script>
+  <script defer src="js/opencv.js"></script>
+  <script defer src="js/Live_Detection.js"></script>
+  <script defer src="js/script.js" type="module"></script>
+  <script defer src="js/poseliveness.js"></script>
   <style>
     body {
+      background:hsl(200,20%,20%);
       margin: 0;
       padding: 0;
+
       width: 100vw;
       height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
-
     canvas {
       position: absolute;
+    }
+    #text{
+      top:20px;
+      position: absolute;
+      color:white;
     }
   </style>
 </head>
 <body>
+  <p id="text">请调整脸部距离</p>
   <video id="video" width="720" height="560" autoplay muted></video>
+  <canvas id="canvas"></canvas>
 </body>
 </html>

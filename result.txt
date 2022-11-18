@@ -1,0 +1,22 @@
+fake img_paper
+
+No     1  2  3  4
+dark   n2 n1 n1 n1
+normal n2 n1 n1 n1 n1 n1 y
+fake img_pad
+
+
+live_with_glass
+
+No     1  2  3  4
+normal y  y  y  n2 y y y  y  y
+lamp-dark   y  y  n2 n2 n1
+light y y
+
+
+live_without_glass
+
+No     1  2  3  4  5
+normal y  y  y  y  y
+dark   y  y
+light  y
